@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joieria Salva d'Or · Alta joyería artesana · Lloret de Mar</title>
+<meta name="description" content="Joieria Salva d'Or, taller artesano de alta joyería en oro y diamantes en el Carrer de la Vila, 63 de Lloret de Mar, desde 1965. Anillos de compromiso, alianzas y diseños a medida. Primer Premio de Diseño de Alta Joyería 2026 con Consonància. Relojería y reparaciones.">
+<meta name="theme-color" content="#0E1014">
+<meta property="og:title" content="Joieria Salva d'Or · Lloret de Mar">
+<meta property="og:description" content="Joyas únicas hechas a mano en Lloret de Mar desde 1965. Diseña tu anillo en 3D.">
+<meta property="og:image" content="assets/img/consonancia.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230E1014'/%3E%3Ccircle cx='32' cy='38' r='15' fill='none' stroke='%23CDAE76' stroke-width='4'/%3E%3Cpath d='M24 18h16l5 6-13 10-13-10z' fill='%23F4EFE6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
+</script>
+</head>
+<body>
+
+<!-- ============ ENTRADA ============ -->
+<div class="intro" id="intro" aria-hidden="true">
+  <span class="intro__spark"></span>
+  <p class="intro__name">Salva d’Or</p>
+  <p class="intro__sub">Joieria · Lloret de Mar · 1965</p>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="Salva d'Or, inicio"><span>Salva d’Or</span><small>Joieria · 1965</small></a>
+  <nav class="nav__links" aria-label="Secciones">
+    <a href="#taller">El taller</a>
+    <a href="#disena">Diseña tu anillo</a>
+    <a href="#talla">Tu talla</a>
+    <a href="#vitrina">Vitrina</a>
+    <a href="#consonancia">Consonància</a>
+    <a href="#visita">Visítanos</a>
+  </nav>
+  <span class="live" data-live><i></i><span data-live-text>Horario</span></span>
+  <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menú"><span></span><span></span></button>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#taller">El taller</a><a href="#disena">Diseña tu anillo</a><a href="#talla">Tu talla</a><a href="#vitrina">Vitrina</a><a href="#consonancia">Consonància</a><a href="#visita">Visítanos</a>
+  <p class="live" data-live><i></i><span data-live-text>Horario</span></p>
+</div>
+
+<main id="top">
+
+  <!-- ============ PORTADA ============ -->
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="kicker">Alta joyería artesana · Lloret de Mar · desde 1965</p>
+      <h1 class="hero__title"><span class="ln"><span>Joyas que</span></span><span class="ln"><span>nacen en</span></span><span class="ln"><span><em>el taller</em></span></span></h1>
+      <p class="hero__lead">Oro de 18 quilates, diamantes naturales y muchas horas de banco. Joan Salvador diseña y hace a mano piezas únicas, como la que gira aquí al lado: arrástrala, o diséñala tú más abajo.</p>
+      <div class="hero__cta">
+        <a class="btn btn--gold" href="#disena"><span>Diseña tu anillo</span><i class="ph-light ph-arrow-down"></i></a>
+        <a class="btn btn--line" href="#consonancia"><i class="ph-light ph-trophy"></i><span>1.er Premio 2026</span></a>
+      </div>
+    </div>
+    <div class="stage stage--hero" id="heroStage">
+      <div class="stage__glow"></div>
+      <div class="stage__mount" id="heroMount"></div>
+      <img class="stage__fallback" src="assets/img/p-solitario.jpg" alt="Solitario de oro blanco con diamante, hecho en el taller de Salva d'Or">
+      <p class="stage__hint"><i class="ph-light ph-hand-grabbing"></i> Arrastra para girar</p>
+    </div>
+    <ul class="hero__specs" aria-label="En el taller">
+      <li><b>18 k</b><span>Oro amarillo, blanco y rosa</span></li>
+      <li><b>G · VS1</b><span>Diamantes naturales</span></li>
+      <li><b>1965</b><span>Joyeros en Lloret</span></li>
+      <li><b>4,9 ★</b><span>70 reseñas en Google</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ EL TALLER ============ -->
+  <section class="taller" id="taller">
+    <div class="taller__pics">
+      <figure class="tp tp--a"><img src="assets/img/taller.jpg" alt="Manos de joyero trabajando una pieza sobre el banco del taller" loading="lazy"></figure>
+      <figure class="tp tp--b"><img src="assets/img/joan.jpg" alt="Retrato de Joan Salvador, joyero de Salva d'Or" loading="lazy"><figcaption>Joan Salvador Marín</figcaption></figure>
+    </div>
+    <div class="taller__copy">
+      <p class="kicker">El taller</p>
+      <h2 class="h2">Entras con una idea,<br>sales con <em>una joya</em></h2>
+      <p class="lead">Así lo cuentan nuestros clientes: traen una foto, un anillo que ya no usan o solo una sensación, y Joan la convierte en una pieza que no existe en ningún otro sitio. También restauramos, reparamos y damos nueva vida al oro que guardas en un cajón.</p>
+      <ol class="timeline">
+        <li><b>1965</b><span>Abre la joyería en el Carrer de la Vila de Lloret.</span></li>
+        <li><b>De padre a hijo</b><span>Joan Salvador Ortiz enseña el oficio a su hijo en el mismo banco.</span></li>
+        <li><b>Hoy</b><span>Diseño, engaste y acabado, todo en el taller de casa.</span></li>
+        <li><b>2026</b><span>Primer Premio de Diseño de Alta Joyería con Consonància.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ DISEÑA TU ANILLO ============ -->
+  <section class="disena" id="disena">
+    <header class="sec-head sec-head--center">
+      <p class="kicker">I · Interactivo</p>
+      <h2 class="h2">Diseña tu <em>anillo</em></h2>
+      <p class="lead">Elige modelo, oro, piedra y quilates; gíralo con el dedo y, cuando te guste, mándanoslo. Lo hacemos a mano en el taller.</p>
+    </header>
+    <div class="disena__grid">
+      <div class="stage stage--config" id="cfgStage">
+        <div class="stage__glow"></div>
+        <div class="stage__mount" id="cfgMount"></div>
+        <img class="stage__fallback" src="assets/img/p-oro-amarillo.jpg" alt="Anillo de oro amarillo con diamante">
+        <p class="stage__ct" id="stageCt">0,50 ct</p>
+      </div>
+      <form class="panel" id="panel" onsubmit="return false">
+        <fieldset class="opt"><legend>Modelo</legend>
+          <div class="seg" data-key="model">
+            <button type="button" data-v="solitario" class="is-on">Solitario</button>
+            <button type="button" data-v="pave">Con pavé</button>
+            <button type="button" data-v="media">Media alianza</button>
+            <button type="button" data-v="alianza">Alianza</button>
+          </div>
+        </fieldset>
+        <fieldset class="opt"><legend>Oro de 18 k</legend>
+          <div class="seg seg--metal" data-key="metal">
+            <button type="button" data-v="amarillo" class="is-on"><i style="--c:#E3B860"></i>Amarillo</button>
+            <button type="button" data-v="blanco"><i style="--c:#E4E4E6"></i>Blanco</button>
+            <button type="button" data-v="rosa"><i style="--c:#E7A88C"></i>Rosa</button>
+            <button type="button" data-v="bicolor"><i style="--c:linear-gradient(90deg,#E3B860 50%,#E4E4E6 50%)"></i>Bicolor</button>
+          </div>
+        </fieldset>
+        <fieldset class="opt" id="optGem"><legend>Piedra</legend>
+          <div class="seg seg--gem" data-key="gem">
+            <button type="button" data-v="diamante" class="is-on"><i style="--c:#F4F7FA"></i>Diamante</button>
+            <button type="button" data-v="esmeralda"><i style="--c:#1E8C50"></i>Esmeralda</button>
+            <button type="button" data-v="zafiro"><i style="--c:#2447A8"></i>Zafiro</button>
+            <button type="button" data-v="rubi"><i style="--c:#B0102A"></i>Rubí</button>
+          </div>
+        </fieldset>
+        <fieldset class="opt" id="optShape"><legend>Talla de la piedra</legend>
+          <div class="seg" data-key="shape">
+            <button type="button" data-v="redonda" class="is-on">Brillante</button>
+            <button type="button" data-v="oval">Oval</button>
+          </div>
+        </fieldset>
+        <fieldset class="opt" id="optCt"><legend>Quilates <output id="ctOut">0,50 ct</output></legend>
+          <input type="range" id="ct" min="0.10" max="1.50" step="0.05" value="0.50" aria-label="Quilates de la piedra central">
+          <div class="range__ends"><span>0,10</span><span>1,50</span></div>
+        </fieldset>
+        <div class="opt opt--row">
+          <label class="field"><span>Talla del dedo</span>
+            <select id="size" aria-label="Talla del anillo"></select>
+          </label>
+          <label class="field field--grow"><span>Grabado interior</span>
+            <input type="text" id="engr" maxlength="22" placeholder="p. ej. A & J · 2026" autocomplete="off">
+          </label>
+        </div>
+        <div class="summary" aria-live="polite">
+          <p class="summary__k">Tu anillo</p>
+          <p class="summary__t" id="summary">—</p>
+        </div>
+        <div class="panel__cta">
+          <a class="btn btn--gold" id="mailBtn" href="mailto:info@joieriasalvador.com"><i class="ph-light ph-envelope-simple"></i><span>Pedir presupuesto</span></a>
+          <a class="btn btn--line" href="tel:+34972371513"><i class="ph-light ph-phone"></i><span>972 37 15 13</span></a>
+        </div>
+        <p class="panel__fine">Presupuesto sin compromiso. Lo que ves es una maqueta: Joan te enseñará piedras reales y ajustará el diseño contigo en el taller.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ TU TALLA ============ -->
+  <section class="talla" id="talla">
+    <div class="talla__copy">
+      <p class="kicker">II · Medidor en pantalla</p>
+      <h2 class="h2">¿Qué <em>talla</em> usas?</h2>
+      <ol class="steps">
+        <li class="is-on" data-step="1"><b>1</b><span>Pon una tarjeta bancaria sobre la pantalla y mueve el control hasta que el rectángulo mida lo mismo.</span></li>
+        <li data-step="2"><b>2</b><span>Coloca encima un anillo que te quede bien y ajusta el círculo al borde interior.</span></li>
+        <li data-step="3"><b>3</b><span>Ya está: esa es tu talla española. Si dudas, ven y te la medimos en tienda.</span></li>
+      </ol>
+    </div>
+    <div class="sizer" id="sizer">
+      <div class="sizer__step" data-panel="1">
+        <div class="card" id="cardRect"><span>Tu tarjeta aquí</span><i></i></div>
+        <label class="sizer__range"><span>Ajustar tamaño</span><input type="range" id="calib" min="2.4" max="8.5" step="0.01" value="3.78" aria-label="Calibrar con una tarjeta"></label>
+        <button class="btn btn--gold" type="button" id="calibOk"><span>Coincide, siguiente</span><i class="ph-light ph-arrow-right"></i></button>
+      </div>
+      <div class="sizer__step" data-panel="2" hidden>
+        <div class="ringgauge"><span class="ringgauge__c" id="gauge"></span></div>
+        <label class="sizer__range"><span>Diámetro interior <output id="diaOut">17,0 mm</output></span><input type="range" id="dia" min="14" max="23" step="0.1" value="17" aria-label="Diámetro interior del anillo"></label>
+        <div class="sizer__res"><p>Talla española</p><b id="sizeOut">13</b><small id="circOut">perímetro 53,4 mm</small></div>
+        <div class="sizer__btns">
+          <button class="btn btn--line" type="button" id="calibBack"><i class="ph-light ph-arrow-left"></i><span>Recalibrar</span></button>
+          <button class="btn btn--gold" type="button" id="useSize"><span>Usar en mi anillo</span><i class="ph-light ph-check"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VITRINA ============ -->
+  <section class="vitrina" id="vitrina">
+    <header class="sec-head">
+      <p class="kicker">III · La vitrina</p>
+      <h2 class="h2">Recién salidas <em>del banco</em></h2>
+    </header>
+    <div class="vit">
+      <div class="vit__stage">
+        <video id="vitVid" muted playsinline preload="none" aria-label="Pieza de joyería girando sobre un guante blanco"></video>
+        <div class="vit__prog"><i id="vitProg"></i></div>
+      </div>
+      <div class="vit__info">
+        <p class="vit__no" id="vitNo">01 / 08</p>
+        <h3 class="vit__t" id="vitT">—</h3>
+        <p class="vit__d" id="vitD">—</p>
+        <dl class="vit__dl" id="vitDl"></dl>
+        <ol class="vit__list" id="vitList"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONSONÀNCIA ============ -->
+  <section class="consonancia" id="consonancia">
+    <div class="cons__head">
+      <p class="kicker">IV · Primer Premio de Diseño de Alta Joyería</p>
+      <h2 class="cons__title">Consonància</h2>
+      <p class="cons__quote">«Una composición donde cada elemento encuentra su lugar y nada sobra ni falta.»</p>
+    </div>
+    <div class="cons__grid">
+      <figure class="cons__pic"><img src="assets/img/consonancia.jpg" alt="Consonància: anillo con turmalina verde de 4,39 ct, oro amarillo, blanco y rosa y 50 diamantes" loading="lazy"></figure>
+      <div class="cons__facts">
+        <dl>
+          <div><dt>Oro</dt><dd>Amarillo, blanco y rosa de 18 kt</dd></div>
+          <div><dt>Piedra central</dt><dd>Turmalina verde natural · 4,39 ct</dd></div>
+          <div><dt>Diamantes</dt><dd>50 naturales talla brillante · 0,609 ct · G/VS1</dd></div>
+          <div><dt>Premio</dt><dd>1.º de Diseño de Alta Joyería · V Concurso Internacional SINTEMÁTICA 2026 · Asociación Joyas de Autor</dd></div>
+          <div><dt>Expuesta</dt><dd>MadridJoya · IFEMA Madrid · 24–27 de septiembre</dd></div>
+        </dl>
+        <p class="cons__story">La pieza premiada guarda una historia de familia: se creó para una de las clientas más antiguas de la casa, a la que el padre de Joan había conocido años atrás.</p>
+      </div>
+      <figure class="cons__vid">
+        <video id="consVid" src="assets/video/premio.mp4" poster="assets/img/v-premio.jpg" muted loop playsinline preload="none" aria-label="Vídeo: entrega del premio en MadridJoya"></video>
+        <button class="snd" type="button" data-snd="consVid" aria-label="Activar sonido"><i class="ph-light ph-speaker-slash"></i></button>
+        <figcaption>La entrega en MadridJoya</figcaption>
+      </figure>
+      <figure class="cons__vid cons__vid--b">
+        <video id="fitelVid" src="assets/video/fitel.mp4" poster="assets/img/v-fitel.jpg" muted loop playsinline preload="none" aria-label="Vídeo: entrevista a Joan Salvador en Fitel Televisión"></video>
+        <button class="snd" type="button" data-snd="fitelVid" aria-label="Activar sonido"><i class="ph-light ph-speaker-slash"></i></button>
+        <figcaption>«Tradició artesana de pare a fill» · Fitel Televisión</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ RELOJERÍA ============ -->
+  <section class="reloj">
+    <div class="reloj__copy">
+      <p class="kicker">V · Relojería y taller</p>
+      <h2 class="h2">También <em>el tiempo</em></h2>
+      <p class="lead">Distribuidores oficiales de relojería y servicio de taller: pilas, correas, ajustes, restauración y reparación de joyas.</p>
+    </div>
+    <div class="brands" aria-label="Marcas de relojería"><div class="brands__in" id="brands"></div></div>
+  </section>
+
+  <!-- ============ RESEÑAS ============ -->
+  <section class="resenas">
+    <p class="resenas__score"><b>4,9</b><span>★★★★★ · 70 reseñas en Google</span></p>
+    <div class="revs">
+      <blockquote><p>«Joan es un artesano de altísima calidad. Le encargué un anillo en oro amarillo y no pudo haber quedado mejor.»</p></blockquote>
+      <blockquote><p>«Me han hecho una pieza completamente personalizada. El trabajo es de una finura y elegancia admirables.»</p></blockquote>
+      <blockquote><p>«Buscaba un anillo de compromiso. Nada encajaba con lo que tenía en mente, así que me propuso hacerlo a medida.»</p></blockquote>
+      <blockquote><p>«Teníamos anillos obsoletos y, con su oro y un ull de Santa Llúcia, Joan nos ha hecho un anillo nuevo. Muy bonito.»</p></blockquote>
+    </div>
+  </section>
+
+  <!-- ============ VISITA ============ -->
+  <section class="visita" id="visita">
+    <figure class="visita__pic"><img src="assets/img/tienda.jpg" alt="Escaparate de la Joieria Salva d'Or en el Carrer de la Vila" loading="lazy"></figure>
+    <div class="visita__copy">
+      <p class="kicker">VI · Visítanos</p>
+      <h2 class="h2">Carrer de la Vila, <em>63</em></h2>
+      <dl class="visita__dl">
+        <div><dt>Lunes a sábado</dt><dd>10:00–13:30 · 16:30–20:00</dd></div>
+        <div><dt>En verano</dt><dd>hasta las 22:00</dd></div>
+        <div><dt>Domingo</dt><dd>Cerrado</dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+34972371513">972 37 15 13</a></dd></div>
+        <div><dt>Correo</dt><dd><a href="mailto:info@joieriasalvador.com">info@joieriasalvador.com</a></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/joieria_salva_dor/" target="_blank" rel="noopener">@joieria_salva_dor</a></dd></div>
+      </dl>
+      <p class="live live--big" data-live><i></i><span data-live-text>Horario</span></p>
+    </div>
+    <div class="visita__map"><iframe title="Mapa: Joieria Salva d'Or, Carrer de la Vila 63, Lloret de Mar" src="https://maps.google.com/maps?q=Joieria%20Salva%20D'or%2C%20Carrer%20de%20la%20Vila%2063%2C%20Lloret%20de%20Mar&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__big" aria-hidden="true">Salva d’Or</p>
+  <div class="foot__row">
+    <span>Joieria Salva d’Or · Carrer de la Vila, 63 · 17310 Lloret de Mar</span>
+    <span>Fotos y vídeos: Instagram @joieria_salva_dor y Google</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="app.js"></script>
+<script type="module" src="ring.js"></script>
+</body>
+</html>
